@@ -89,4 +89,9 @@ public class Position implements IPosition {
 		return isHit;
 	}
 
+	@Override
+	public String toString() {
+		return ("Linha = " + row + " Coluna = " + column);
+	}
+	
 }
