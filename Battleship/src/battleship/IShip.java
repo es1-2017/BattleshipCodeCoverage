@@ -10,6 +10,7 @@ import java.util.Iterator;
  *
  */
 public interface IShip {
+	
 	String getCategory();
 	abstract int getSize();
 	IPosition getPosition();
