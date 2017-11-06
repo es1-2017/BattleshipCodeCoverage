@@ -4,7 +4,6 @@
 package battleship;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -106,6 +105,7 @@ public class Game implements IGame {
 	}
 
 	
+	@SuppressWarnings("static-access")
 	private boolean validateShot(IPosition pos) {
 		return (   pos.getRow() >= 0
 			    && pos.getRow() <= fleet.SQUAREGRIDSIZE 

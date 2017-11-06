@@ -281,7 +281,7 @@ public class Main {
 	 * @param game The context game while fleet is being attacked
 	 */
 	public static void firingRound(Scanner in, IGame game) {
-		for (int i = 0; i<3; i++) {
+		for (int i = 0; i < 3; i++) {
 			IPosition pos = readPosition(in);
 			IShip sh = game.fire(pos);
 			if (sh != null)
