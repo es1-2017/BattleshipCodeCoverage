@@ -16,7 +16,7 @@ public class Caravel extends Ship {
 	 * @param bearing
 	 * @param pos
 	 */
-	public Caravel(Compass bearing, IPosition pos) {
+	public Caravel(Compass bearing, IPosition pos) throws IllegalArgumentException {
 		super(Caravel.NAME, bearing, pos);
 		
 		if (bearing == Compass.NORTH || bearing == Compass.SOUTH)

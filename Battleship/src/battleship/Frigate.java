@@ -16,7 +16,7 @@ public class Frigate extends Ship {
 	 * @param bearing
 	 * @param pos
 	 */
-	public Frigate(Compass bearing, IPosition pos) {
+	public Frigate(Compass bearing, IPosition pos) throws IllegalArgumentException {
 		super(Frigate.NAME, bearing, pos);
 		if (bearing == Compass.NORTH || bearing == Compass.SOUTH)
 			for (int r = 0; r < SIZE; r++)

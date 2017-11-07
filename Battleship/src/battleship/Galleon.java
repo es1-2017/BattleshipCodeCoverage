@@ -16,7 +16,7 @@ public class Galleon extends Ship {
 	 * @param bearing
 	 * @param pos
 	 */
-	public Galleon(Compass bearing, IPosition pos) {
+	public Galleon(Compass bearing, IPosition pos) throws IllegalArgumentException {
 		super(Galleon.NAME, bearing, pos);
 		switch (bearing) {
 		case NORTH:

@@ -16,7 +16,7 @@ public class Carrack extends Ship {
 	 * @param bearing
 	 * @param pos
 	 */
-	public Carrack(Compass bearing, IPosition pos) {
+	public Carrack(Compass bearing, IPosition pos) throws IllegalArgumentException {
 		super(Carrack.NAME, bearing, pos);
 		if (bearing == Compass.NORTH || bearing == Compass.SOUTH)
 			for (int r = 0; r < SIZE; r++)
