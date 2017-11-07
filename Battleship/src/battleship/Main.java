@@ -36,10 +36,16 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		System.out.println("***  Battleship  ***");
-		// taskA();
-		// taskB();
-		// taskC();
-		// taskD();
+		try {
+			taskA();
+			// taskB();
+			// taskC();
+			// taskD();
+		}
+		catch (IllegalArgumentException excep) {
+			System.err.println("Caught IllegalArgumentException: " + excep.getMessage());
+			
+		}
 
 	}
 

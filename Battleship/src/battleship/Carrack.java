@@ -25,6 +25,8 @@ public class Carrack extends Ship {
 			for (int c = 0; c < SIZE; c++)
 				positions.add(new Position(pos.getRow(), pos.getColumn()+c));
 		// else ... TODO: invalid bearing
+		else 
+			throw new IllegalArgumentException("ERROR! invalid bearing for the carrack");
 	}
 
 	/* (non-Javadoc)
