@@ -10,13 +10,13 @@ import java.util.Scanner;
 /**
  * @author adrianolopes
  * 
- * PS: Thanks to Miguel Goulão for his earlier contribution 
+ * PS: Credits are also due to Miguel Goulão for his earlier contribution 
  *
  */
 public class Main {
 	
 	/**
-	 * Strings to be used by the player
+	 * Strings to be used by the user
 	 */
 	private static final String DESISTIR = "desisto";
 	private static final String RAJADA = "rajada";
@@ -37,10 +37,7 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("***  Battleship  ***");
 		try {
-			taskA();
-			// taskB();
-			// taskC();
-			// taskD();
+			
 		}
 		catch (IllegalArgumentException excep) {
 			System.err.println("Caught IllegalArgumentException: " + excep.getMessage());
@@ -49,6 +46,13 @@ public class Main {
 
 	}
 
+	/////////////////////////////////////////////////////////////////////////////
+	
+	// hereafter one may find some code that can be converted to automatic tests, 
+	// as long as appropriate changes are made. It also shows that we should
+	// develop our code incrementally eg. first the ships, then the fleet, 
+	// then some rule checking, then dealing with firing and so on
+	
 	/**
 	 * This task tests the building up of ships: For each ship, reads positions 
 	 * and indicates whether the ship occupies each one of such positions or not
