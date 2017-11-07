@@ -14,7 +14,7 @@ public class Barge extends Ship {
 
 	/**
 	 * @param bearing - barge bearing
-	 * @param pos - left upper position of the barge
+	 * @param pos - upper left position of the barge
 	 */
 	public Barge(Compass bearing, IPosition pos) {
 		super(Barge.NAME, bearing, pos);

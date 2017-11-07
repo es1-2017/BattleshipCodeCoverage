@@ -44,7 +44,6 @@ public class Fleet implements IFleet {
 			if (s.getCategory().equals(category))
 				shipsLike.add(s);
 		}
-		
 		return shipsLike;
 	}
 
